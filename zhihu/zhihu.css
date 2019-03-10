@@ -1,0 +1,208 @@
+.SignFlowHomepage{
+    background-image: url(./sign_bg.db29b0fb.png);
+    background-repeat:no-repeat;
+    background-color: #b8e5f8;
+    background-size:cover;
+    width: 100%;
+    height:100vh;
+    overflow: auto;
+    padding-right: 15px;
+
+}
+
+.SignFlowHomepage-content {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    min-height: 688px;
+    height: calc(100% - 42px);
+    box-sizing: border-box;
+}
+.SignContainer-content{
+    width:432px;
+    margin: 0 auto;
+    text-align: center;
+}
+.SignFlowHeader{
+    padding-top: 30px;
+}
+.SignFlowHeader-slogen{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 22px;
+    color: #0084ff;
+}
+.Register-content{
+    padding: 0 40px 36px;
+    font-size: 16px;
+}
+.SignFlow-account,.Register-SMSInput{
+    display:flex;
+    align-items:center;
+    border-bottom: #dddddd solid 1px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.SignFlow-account select{
+    width:100px;
+    height:34px;
+    border: none;
+    color: #999999;
+}
+.SignFlow-supportedCountriesSelectContainer{
+    float: left;
+}
+
+.SignFlow-accountSeperator{
+    float: left;
+    width:1px;
+    height:22px;
+    background: #EBEBEB;
+    margin: 0px 12px 0;
+}
+.SignFlow-accountInput{
+    display: block;
+    overflow: hidden;
+    font-size: inherit;
+}
+.Input{
+    height:36px;
+    border:none;
+    float: left;
+}
+.Button{
+    border: none;
+    background-color: transparent;
+    color: #175199;
+}
+.Button-voice{
+    border: none;
+    background-color: transparent;
+    color: #8590a6;
+    float: right;
+    margin-top:10px;
+}
+.Button-blue{
+    color:#FFFFFF;
+    background-color: #0084ff;
+    width:100%;
+    margin-top: 30px;
+    height: 36px;
+    border:1px solid;
+    border-color:#0084ff;
+    border-radius: 3px;
+}
+
+.SignFlowInput{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.Register-footer{
+    font-size: 13px;
+    margin-top: 16px;
+}
+.Register-declaration{
+    color:#8590a6;
+}
+.Register-org{
+    color: #175199;
+}
+.SignContainer-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #f6f6f6;
+    height: 56px;
+    border-top: 1px solid #EBEBEB;
+    font-size: 16px;
+}
+.Register-smsBackUp{
+    display:block;
+}
+
+.SignContainer-switch{
+    font-size:16px;
+}
+
+.SignContainer-switch span{
+    color:#175199;
+    cursor: pointer;
+}
+
+.ZhihuLogo{
+    fill: #0084ff;
+}
+.Card{
+    background: #FFFFFF;
+}
+
+.SignFlowHomepage-footer {
+    font-size: 12px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 1px 2px #999999;
+}
+
+body{
+    margin: 0;
+}
+
+.EntrySign-body{
+    overflow: hidden;
+}
+
+.SignFlowHomepage-footer a:not(:last-child)::after, .SignFlowHomepage-footer span:not(:last-child)::after{
+    content: ' \B7 ';
+    white-space:pre;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.ZhihuIntegrity{
+    position:relative;
+    width:420px;
+    margin:10px auto;
+}
+
+.ZhihuIntegrity>div{
+    position:relative;
+    display:inline-block;
+    z-index:0;
+    line-height:26px;
+}
+
+.ZhihuIntegrity img{
+    position:absolute;
+    left:-34px;
+    z-index: -1;
+    width:138px;
+    height:26px;
+}
+.ZhihuIntegrity a{
+    z-index: 1;
+}
+
+.SignFlowHomepage-downloadBtn{
+    width:432px;
+    background-color:#8590a6;
+    margin-top: 30px;
+    border: 1px solid #8590a6;
+    height: 42px;
+    color: #ffffff;
+    cursor: pointer;
+}

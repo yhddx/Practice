@@ -1,0 +1,149 @@
+.Entry-body{
+    background: #f6f6f6;
+    margin:0;
+}
+
+
+.AppHeader-inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1000px;
+    height: 52px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.ZhihuLogo{
+    fill: #0084ff;
+}
+
+.AppHeader{
+    z-index: 100;
+    min-width: 1032px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+}
+
+.AppHeader-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 18px;
+    margin-left: 27px;
+}
+.AppHeader-navItem{
+    color: #8590a6;
+    font-size: 15px;
+    padding: 0 15px;
+}
+.AppHeader-navItem:first-child{
+    padding-left: 0px;
+}
+.SearchBar{
+    display: flex;
+    align-items: center;
+}
+
+
+.SearchBar-input{
+    width: 326px;
+    padding-left: 16px;
+    display:flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding:4px 10px;
+    height: 24px;
+    font-size: 14px;
+    border:1px solid #ebebeb;
+}
+
+.Input-after{
+    position: relative;
+}
+.Input-after button{
+    position: absolute;
+    left: -24px;
+    top: -16px;
+    
+}
+.Button{
+    height: 32px;   
+    font:14px;  
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.SearchBar-searchIcon{
+    color: #8590a6; 
+    background: #f6f6f6;
+    border: transparent;
+    line-height: 32px;
+}
+
+.Button-blue{
+    background: #0084ff;
+    color: #ffffff;
+    border: none;
+    margin-left: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.Button--plain{
+    background: transparent;
+    border: none;
+    padding:0px;
+}
+.Span{
+    display: inline-flex;
+    align-items:center
+}
+
+a{
+    text-decoration: none;
+}
+form{
+    margin:0;
+    padding: 0;
+}
+.SearchBar-input input{
+    border: none;
+    background-color: #f6f6f6;
+    flex: 1 1;
+    height:24px;
+}
+.SearchBar-input input:focus{
+    outline: none;
+}
+
+.AppHeader-userInfo{
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.AppHeader-notifications{
+    margin-right: 40px;
+}
+
+.AppHeader-messages{
+    margin-right: 40px;
+    position: relative;
+}
+
+.AppHeader-profile{
+
+}
+
+.Messages-count{
+    position: absolute;
+    /* bottom:50%; */
+    /* left:50%; */
+    background: #f1403c;
+    color:#ffffff;
+    border:solid 2px #ffffff;
+    border-radius: 20px;
+    font-size: 11px;
+    padding: 0 4px;
+}

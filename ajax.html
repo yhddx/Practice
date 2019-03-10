@@ -1,0 +1,110 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <div>
+        <div>static content</div>
+        <div id="ajax-content">ajax content</div>
+        <div id="not-found"></div>
+    </div>
+    <script>
+        function success(text) {
+            document.querySelector("div#ajax-content").innerHTML = text;
+        }
+
+        function fail(code) {
+            var textarea = document.getElementById('test-response-text');
+            textarea.value = 'Error code: ' + code;
+        }
+
+
+        function promiseExiceseOne() {
+            var p = new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    document.querySelector("div#ajax-content").innerHTML = "This is Task One";
+                    resolve('任务一完成');
+                }, 1000)
+            });
+            return p;
+        }
+
+        function promiseExiceseTwo() {
+            var p = new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    document.querySelector("div#ajax-content").innerHTML = "This is Task Two";
+                    //resolve('任务二完成');
+                    reject('任务二未完成');
+                }, 1000)
+            });
+            return p;
+        }
+
+        function promiseExiceseThree() {
+            var p = new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    document.querySelector("div#ajax-content").innerHTML = "This is Task Three";
+                    resolve('任务三完成');
+                }, 1000)
+            });
+            return p;
+        }
+
+        promiseExiceseOne()
+            .then(function (data) {
+                console.log(data);
+                console.log(data999);
+                return promiseExiceseTwo();
+            })
+            .then(function (data) {
+                console.log(data);
+                return promiseExiceseThree();
+            })
+            .then(function (data) {
+                console.log(data);
+            })
+            .catch(function (data) {
+                console.log(data);
+            });
+
+
+        // var request = new XMLHttpRequest(); // 新建XMLHttpRequest对象
+
+        // request.onreadystatechange = function () { // 状态发生变化时，函数被回调
+        //     if (request.readyState === 4) { // 成功完成
+        //         // 判断响应结果:
+        //         if (request.status === 200) {
+        //             // 成功，通过responseText拿到响应的文本:
+        //             return success(request.responseText);
+
+        //         } else if (request.status === 404) {
+
+        //             document.querySelector("div#not-found").innerHTML = "404 Not Found";
+        //             document.querySelector("div#not-found").style.color = "#ff0000";
+
+        //             console.log("404 Not found");
+        //         }
+        //         else {
+        //             // 失败，根据响应码判断失败原因:
+        //             return fail(request.status);
+        //         }
+        //     } else {
+        //         // HTTP请求还在继续...
+        //     }
+        // }
+
+
+
+
+
+        // 发送请求:
+        // request.open('GET', 'http://192.168.1.111:8000/test1.json');
+        // request.send();
+
+
+        console.log('请求已发送，请等待响应...');
+    </script>
+</body>
+
+</html>

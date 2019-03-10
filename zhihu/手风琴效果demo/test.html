@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>手风琴效果</title>
+    <style type="text/css">
+    .accordionMenu{
+        background-color:#eee;
+        color: #424242;
+        width:500px;
+    }
+    .accordionMenu div p {
+        display: none;
+    }
+    .accordionMenu div h2 {
+        position: relative;
+    }
+    .accordionMenu div h2::after{
+        content: "";
+        border: 6px solid #333;
+        border-color:transparent transparent transparent #333 ;
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        width: 0;
+        height: 0;
+    }
+    .accordionMenu div:target p{
+        display: block;
+    }
+    .accordionMenu div:target h2::after{
+        border-color: #333 transparent transparent transparent ;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="accordionMenu">
+        <div id="Brand">
+            <h2><a href="#Brand">Brand</a></h2>
+            <p>Lorem ipsum dolor...</p>
+        </div>
+
+        <div id="Promotion">
+            <h2><a href="#Promotion">Promotion</a></h2>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+
+        <div id="Event">
+            <h2><a href="#Event">Event</a></h2>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
